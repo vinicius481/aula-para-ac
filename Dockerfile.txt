@@ -1,7 +1,4 @@
 FROM python:3.7-slim
 RUN pip install flask
 RUN pip install flask-mysql
-RUN mkdir templates
-COPY ac4.py /app.py
-COPY templates/*  /templates/
-CMD ["python","app.py"]
+CMD ["python","ac4.py"]
